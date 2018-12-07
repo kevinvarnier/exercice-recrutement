@@ -14,6 +14,7 @@ namespace WebApplication.Helpers
             {
                 new Contact
                 {
+                    Id = Guid.NewGuid(),
                     BirthDate = new DateTime(1983, 01, 03),
                     Email = "dupont.jean@exemple.ca",
                     LastName = "Dupont",
@@ -21,6 +22,7 @@ namespace WebApplication.Helpers
                 },
                  new Contact
                 {
+                    Id = Guid.NewGuid(),
                     BirthDate = new DateTime(1923, 04, 10),
                     Email = "tremblay.jeanne@exemple.ca",
                     LastName = "Tremblay",
@@ -28,6 +30,7 @@ namespace WebApplication.Helpers
                 },
                   new Contact
                 {
+                    Id = Guid.NewGuid(),
                     BirthDate = new DateTime(1945, 07, 23),
                     Email = "fontaine.henri@exemple.ca",
                     LastName = "Fontaine",
@@ -35,6 +38,7 @@ namespace WebApplication.Helpers
                 },
                  new Contact
                 {
+                    Id = Guid.NewGuid(),
                     BirthDate = new DateTime(1965, 03, 15),
                     Email = "dupuis.flora@exemple.ca",
                     LastName = "Dupuis",
@@ -42,6 +46,7 @@ namespace WebApplication.Helpers
                 },
                 new Contact
                 {
+                    Id = Guid.NewGuid(),
                     BirthDate = new DateTime(1990, 08, 17),
                     Email = "sylvania.jean@exemple.ca",
                     LastName = "Sylvania",

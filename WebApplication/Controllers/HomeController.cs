@@ -34,6 +34,13 @@ namespace WebApplication.Controllers
                 return View(Session["userData"]);
             }
 
+            if (contact.BirthDate > DateTime.Now)
+            {
+                ModelState.AddModelError("", "Erreur : Date de naissance invalide");
+                return View(Session["userData"]);
+            }
+
+            contact.Id = Guid.NewGuid();
             _contactList.Add(contact);
             Session["userData"] = _contactList;
             return View(Session["userData"]);
